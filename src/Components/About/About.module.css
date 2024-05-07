@@ -1,0 +1,203 @@
+.container{
+    font-size: 1.5rem;
+    /* border-top: 4px solid rgba(255, 255, 255, 0.066); */
+    position: relative;
+    color: white;
+    padding: 3rem 0;
+    margin: 1rem;
+    
+    background-color: rgba(97, 96, 96, 0.251);
+    border-radius: .5rem;
+    backdrop-filter: blur(4px);
+    box-shadow: 0px 0px 8px 0px rgba(223, 222, 222, 0.228);
+}
+
+/* .filler{
+    height: 10rem;
+    width: 100%;
+    position: absolute;
+    top: -10rem;
+    background-image: linear-gradient(to bottom, transparent, rgb(11, 3, 45));
+} */
+
+
+
+@keyframes view{
+    from{
+        opacity: 0;
+        scale: 0.2;
+    }
+}
+
+.innerContainer{
+    /* background-color: aliceblue; */
+    display: flex;
+    /* position: relative; */
+}
+.box1{
+    /* background-color: rgb(217, 213, 235); */
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1rem;
+    gap: .5rem;
+    height: 70vh;
+}
+
+.box1>div:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url('../../Assets/IIT.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.box1>div:nth-child(2){
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url('../../Assets/coding.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.box1>div:nth-child(2) button{
+    opacity: 0;
+    position: absolute;
+    right: 0.4rem;
+    bottom: 0.4rem;
+    background-color: rgb(2, 11, 135);
+    border: none;
+    border-radius: .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.box1>div:nth-child(2):hover button{
+    opacity: 1;
+    z-index: 2;
+}
+
+.box1>div:nth-child(3){
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-image: url('../../Assets/WhatsApp\ Image\ 2024-05-05\ at\ 10.19.59\ AM.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.box1>div:nth-child(5){
+    background-image: url('../../Assets/WhatsApp\ Image\ 2024-05-05\ at\ 10.20.51\ AM.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.box1>div:nth-child(6){
+    background-image: url('../../Assets/WhatsApp\ Image\ 2024-05-05\ at\ 10.24.05\ AM.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.box1>div:nth-child(4){
+    background-image: url('../../Assets/maths.png');
+    background-size: cover;
+    background-position: center;
+}
+.box1>div:nth-child(7){
+    background-image: url('../../Assets/kt.jpeg');
+    background-size: cover;
+    background-position: 50% bottom;
+}
+.box1>div{
+    position: relative;
+}
+
+.box1>div::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.822);
+    z-index: 1;
+    transition: all .4s ease;
+    box-sizing: border-box;
+    
+}
+.box1>div:hover::before{
+    height: 100%;
+    padding: .2rem;
+}
+
+.box1>div:nth-child(1):hover::before{
+    content: 'IIT Kharagpur, West Bengal';
+}
+
+.box1>div:nth-child(2)::before{
+    font-size: 1rem;
+}
+.box1>div:nth-child(5)::before{
+    font-size: 1.2rem;
+}
+.box1>div:nth-child(6)::before{
+    font-size: 1.2rem;
+}
+.box1>div:nth-child(4)::before{
+    font-size: 1.2rem;
+}
+.box1>div:nth-child(7)::before{
+    font-size: 1.2rem;
+}
+
+.box1>div:nth-child(2):hover::before{
+    content: '01001010 01110101 01110011 01110100 00100000 01110111 01100001 01110011 01110100 01101001 01101110 01100111 00100000 01111001 01101111 01110101 01110010 00100000 01110100 01101001 01101101 01100101 Translate:)';
+}
+
+.box1>div:nth-child(5):hover::before{
+    content: 'Celebrating Diwali, with swag';
+}
+.box1>div:nth-child(6):hover::before{
+    content: 'Unity and Discipline';
+}
+.box1>div:nth-child(3):hover::before{
+    content: 'Sport of Gentlemen';
+}
+.box1>div:nth-child(4):hover::before{
+    content: 'Taught me the concept of Imaginary before my GF;)';
+}
+.box1>div:nth-child(7):hover::before{
+    content: 'Random filler pic';
+}
+
+.box2{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+
+}
+.title{
+    font-size: 2.4rem;
+    /* background-color: aliceblue; */
+    /* background-color: aliceblue; */
+    /* margin-top: 1rem; */
+    animation: view linear both;
+    /* animation-timeline: view();
+    animation-range: 0vh 30vh;*/
+    margin-bottom: 2rem; 
+    border-bottom: 2px solid #33e31b;
+    margin-top: 0;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
