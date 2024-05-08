@@ -47,6 +47,11 @@
     font-size: 1.8rem;
 }
 
+.resumeContainer{
+    /* background-color: #ffffff; */
+    width: fit-content;
+}
+
 .resume{
     font-size: 1.1rem;
     padding: .3rem .6rem;

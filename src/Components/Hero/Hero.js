@@ -15,7 +15,7 @@ function Hero() {
                     </span>
                 </div>
                 <div>Hockey Player and KGPian</div>
-                <div><a href='https://drive.google.com/file/d/1KkasiBBXWv53iWcmsCeF09H31QkeWob_/view?usp=sharing' target='blank'><button className={styles.resume} >Resume</button></a></div>
+                <div className={styles.resumeContainer}><a href='https://drive.google.com/file/d/1KkasiBBXWv53iWcmsCeF09H31QkeWob_/view?usp=sharing' target='blank'><button className={styles.resume} >Resume</button></a></div>
                 <div className={styles.social}><a href='https://www.linkedin.com/in/harsh-vardhan-gupta-51446224b/' target='blank'><button><Linkedin/></button></a><a href='https://www.instagram.com/harshvg3/' target='blank'><button><Insta/></button></a><a href='https://www.facebook.com/profile.php?id=100086304926374' target='blank'><button><Facebook/></button></a></div>
             </div>
            
