@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react';
-import React from 'react'; 
+import { useEffect, useState, lazy } from 'react';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
@@ -9,7 +8,7 @@ import TopArrow from './Components/TopArrow/TopArrow';
 import Footer from './Components/Footer/Footer';
 
 
-const Projects = React.lazy(() => import('./Components/Projects/Projects'));
+const Projects = lazy(() => import('./Components/Projects/Projects'));
 
 function App() {
 
