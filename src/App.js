@@ -4,8 +4,10 @@ import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
 import About from './Components/About/About'
 import TopArrow from './Components/TopArrow/TopArrow';
-import Projects from './Components/Projects/Projects';
+// import Projects from './Components/Projects/Projects';
 import Footer from './Components/Footer/Footer';
+
+const Projects = React.lazy(() => import('./Components/Projects/Projects'));
 
 function App() {
 
