@@ -6,12 +6,10 @@ import About from './Components/About/About'
 import TopArrow from './Components/TopArrow/TopArrow';
 import Projects from './Components/Projects/Projects';
 import Footer from './Components/Footer/Footer';
-import Loader from './Components/Loader/Loader';
 
 function App() {
 
   const [showArrow, setShowArrow] = useState(false);
-  const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -31,8 +29,6 @@ function App() {
 
     })
 
-    setIsReady(true);
-
 
   
 
@@ -44,7 +40,7 @@ function App() {
       <div className='circle' id='circle'></div>
       {showArrow && <TopArrow />}
       <Navbar />
-      {isReady ? <Hero/> : <Loader/>}
+      <Hero/>
       <About />
       <Projects/>
       <Footer/>
