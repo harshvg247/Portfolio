@@ -58,6 +58,31 @@ function Projects() {
                     </div>
                 </div>
 
+                <div className={styles.card}>
+                    <div className={styles.box1}>
+                        <div className={`${styles.image1} ${styles.azad1}`}></div>
+                        <div className={`${styles.image2} ${styles.azad2}`}></div>
+
+                    </div>
+                    <div className={styles.box2}>
+                        <div className={styles.projectTitle}>
+                            <b>Hall Management Website</b>
+                        </div>
+                        <ul className={styles.descriptionList}>
+                            <li> The website is built using the Django framework and utilizes Nginx, Docker, Gunicorn, and SQL to ensure a robust and scalable web application</li>
+                            <li>Online complain regesteration and library management system</li>
+                            <li>Integrated Google Auth for enhanced security</li>
+                        </ul>
+                        <div className={styles.projectSubtitle}>Tech Stack</div>
+                        <ul className={styles.stackList}>
+                            <li>Django</li>
+                            <li>Google Auth</li>
+                            <li>SQL</li>
+                            <li>Docker</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
     )

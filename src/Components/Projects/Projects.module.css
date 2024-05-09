@@ -57,7 +57,13 @@
     background-image: url('./../../Assets/ktj.jpeg');
 
 }
+.azad1{
+    background-image: url('./../../Assets/azad1.jpeg');
+}
 
+.azad2{
+    background-image: url('./../../Assets/azad2.jpeg');
+}
 .image1, .image2{
     background-size: cover;
     background-position: center;
